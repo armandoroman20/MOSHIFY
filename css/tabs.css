@@ -1,0 +1,245 @@
+.tab-container {
+  /* max-width: 950px; */
+  /* width: 100%; */
+  padding: 0px 0px 0px 0px;
+  background: #fff;
+  /* margin: 0 10px; */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+  height: 521px;
+}
+
+/* .container .topic {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  } */
+
+.content {
+  display: flex;
+  height: 100%;
+  margin-left: 5%;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.content .list {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  /* margin-right: 50px; */
+  position: relative;
+  /* height: 428px; */
+  height: 81%;
+  overflow: scroll;
+}
+
+.content .list label {
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  /* padding-left: 25px; */
+  transition: all 0.5s ease;
+  color: #000000;
+  z-index: 12;
+  font-family: Montserrat-Regular;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+#turf-lawn:checked ~ .list label.turf-lawn,
+#trees-shrubs:checked ~ .list label.trees-shrubs,
+#roses:checked ~ .list label.roses,
+#annuals:checked ~ .list label.annuals,
+#pollinators:checked ~ .list label.pollinators,
+#pests:checked ~ .list label.pests,
+#edibles:checked ~ .list label.edibles,
+#soil:checked ~ .list label.soil,
+#native:checked ~ .list label.native,
+#gardening:checked ~ .list label.gardening {
+  color: #fff;
+}
+.content .list label:hover {
+  color: #326799;
+}
+.content .slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  /* border-radius: 12px; */
+  background: #7fb09b;
+  transition: all 0.4s ease;
+}
+#turf-lawn:checked ~ .list .slider {
+  top: 0;
+}
+#trees-shrubs:checked ~ .list .slider {
+  top: 60px;
+  background-color: #ce796b;
+}
+#roses:checked ~ .list .slider {
+  top: 120px;
+  background-color: #336699;
+}
+#annuals:checked ~ .list .slider {
+  top: 180px;
+  background-color: #4c1e4f;
+}
+#pollinators:checked ~ .list .slider {
+  top: 240px;
+}
+#pests:checked ~ .list .slider {
+  top: 300px;
+  background-color: #ce796b;
+}
+#edibles:checked ~ .list .slider {
+  top: 360px;
+  background-color: #336699;
+}
+#soil:checked ~ .list .slider {
+  top: 420px;
+  background-color: #4c1e4f;
+}
+#native:checked ~ .list .slider {
+  top: 480px;
+}
+#gardening:checked ~ .list .slider {
+  top: 540px;
+  background-color: #ce796b;
+}
+.content .text-content {
+  width: 80%;
+  /* height: 100%; */
+}
+.content .text {
+  display: none;
+}
+.content .text .title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.title {
+  margin-left: 30px;
+}
+.tab-content .middle-title {
+  font-family: Montserrat-Regular;
+  margin: 0px 81px;
+  letter-spacing: 0.18px;
+  line-height: 36px;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 600;
+}
+/* .content .text p {
+    text-align: justify;
+  } */
+
+.content .text-content .turf-lawn {
+  display: block;
+}
+#turf-lawn:checked ~ .text-content .turf-lawn,
+#trees-shrubs:checked ~ .text-content .trees-shrubs,
+#roses:checked ~ .text-content .roses,
+#annuals:checked ~ .text-content .annuals,
+#pollinators:checked ~ .text-content .pollinators,
+#pests:checked ~ .text-content .pests,
+#edibles:checked ~ .text-content .edibles,
+#soil:checked ~ .text-content .soil,
+#native:checked ~ .text-content .native,
+#gardening:checked ~ .text-content .gardening {
+  display: block;
+}
+#trees-shrubs:checked ~ .text-content .turf-lawn,
+#roses:checked ~ .text-content .turf-lawn,
+#annuals:checked ~ .text-content .turf-lawn,
+#pollinators:checked ~ .text-content .turf-lawn,
+#pests:checked ~ .text-content .turf-lawn,
+#edibles:checked ~ .text-content .turf-lawn,
+#soil:checked ~ .text-content .turf-lawn,
+#native:checked ~ .text-content .turf-lawn,
+#gardening:checked ~ .text-content .turf-lawn {
+  display: none;
+}
+.content input {
+  display: none;
+}
+
+.tab-content {
+  display: flex;
+  height: 100%;
+}
+
+.tab-content .title {
+  font-family: Montserrat-SemiBold;
+  margin: 0 81px;
+  font-size: 36px;
+}
+.tab-content p {
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+  margin: 40px 81px;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.tab-content button {
+  font-family: Montserrat-Regular;
+  justify-content: center;
+  margin-right: 81px;
+  margin-left: 81px;
+  height: 38px;
+  width: 110px;
+  background-color: transparent;
+  border: 0.75px solid #000000;
+}
+
+.tab-content img {
+  height: 100%;
+}
+
+.text-content {
+  display: flex;
+}
+
+.tab-column-1 {
+  width: 50%;
+  overflow-wrap: break-word;
+}
+
+.tab-column-2 {
+  width: 50%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.3;
+}
+/* This makes the text under Garden learning and reference directory lay on top of the image*/
+#post-166301
+  > div
+  > div
+  > div
+  > div.et_pb_section.et_pb_section_5.et_section_regular.et_pb_section_sticky.et_pb_section_sticky_mobile
+  > div
+  > div.et_pb_column.et_pb_column_3_5.et_pb_column_13.et_pb_css_mix_blend_mode_passthrough {
+  z-index: 3;
+}
+
+/* This makes the text under Garden learning and reference directory lay on top of the image*/
+#post-166301
+  > div
+  > div
+  > div
+  > div.et_pb_section.et_pb_section_5.et_section_regular.et_pb_section_sticky.et_pb_section_sticky_mobile
+  > div
+  > div.et_pb_column.et_pb_column_3_5.et_pb_column_13.et_pb_css_mix_blend_mode_passthrough {
+  z-index: 3;
+}

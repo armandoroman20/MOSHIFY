@@ -57,7 +57,9 @@
 #edibles:checked ~ .list label.edibles,
 #soil:checked ~ .list label.soil,
 #native:checked ~ .list label.native,
-#gardening:checked ~ .list label.gardening {
+#gardening:checked ~ .list label.gardening,
+#houseplants:checked ~ .list label.houseplants,
+#cactus:checked ~ .list label.cactus {
   color: #fff;
 }
 .content .list label:hover {
@@ -110,6 +112,14 @@
   top: 540px;
   background-color: #ce796b;
 }
+#houseplants:checked ~ .list .slider {
+  top: 600px;
+  background-color: #336699;
+}
+#cactus:checked ~ .list .slider {
+  top: 660px;
+  background-color: #4c1e4f;
+}
 .content .text-content {
   width: 80%;
   /* height: 100%; */
@@ -150,7 +160,9 @@
 #edibles:checked ~ .text-content .edibles,
 #soil:checked ~ .text-content .soil,
 #native:checked ~ .text-content .native,
-#gardening:checked ~ .text-content .gardening {
+#gardening:checked ~ .text-content .gardening,
+#houseplants:checked ~ .text-content .houseplants,
+#cactus:checked ~ .text-content .cactus {
   display: block;
 }
 #trees-shrubs:checked ~ .text-content .turf-lawn,
@@ -161,7 +173,9 @@
 #edibles:checked ~ .text-content .turf-lawn,
 #soil:checked ~ .text-content .turf-lawn,
 #native:checked ~ .text-content .turf-lawn,
-#gardening:checked ~ .text-content .turf-lawn {
+#gardening:checked ~ .text-content .turf-lawn,
+#houseplants:checked ~ .text-content .turf-lawn,
+#cactus:checked ~ .text-content .turf-lawn {
   display: none;
 }
 .content input {
